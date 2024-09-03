@@ -1,0 +1,44 @@
+@import url(base.css);
+
+header {
+  padding: 20px 0;
+  box-shadow: -2px 0px 10px #00000096;
+}
+header .Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header .Icons h1 {
+  font-size: 24px;
+}
+header .bar {
+  display: none;
+}
+header .Nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header .Nav a {
+  color: #8c8c8c;
+  font-size: 20px;
+  font-family: var(--mainFont);
+}
+header .Nav .selected {
+  color: #030303;
+}
+@media screen and (max-width: 768px) {
+  header .Icons h1 {
+    font-size: 16px;
+  }
+  header .bar {
+    display: block;
+  }
+  header .Nav {
+    display: none;
+  }
+}
