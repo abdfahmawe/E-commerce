@@ -44,69 +44,122 @@ header .Nav .selected {
     display: none;
   }
 }
-.Catalog {
+.Cart {
   padding: 60px 0;
 }
-.Catalog .row {
-  gap: 20px;
-  justify-content: space-evenly;
+.Cart .row {
+  align-items: flex-start;
 }
-.Catalog .item {
-  width: 30%;
-  box-shadow: 0px 2px 4px 0px #00000096;
+.Cart .your-cart {
+  width: 60%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 30px;
+}
+.Cart .your-cart h3 {
+  font-size: 24px;
+}
+.Cart .your-cart .item {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1px 12px #000000b0;
+}
+.Cart .your-cart .item .item-info {
+  display: flex;
+}
+.Cart .your-cart .item .item-info .item-name {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
   gap: 10px;
 }
-.Catalog .item .item-info {
-  display: flex;
-  justify-content: space-around;
+.Cart .your-cart .item .item-info .item-name span {
+  font-size: 14px;
+}
+.Cart .your-cart .item .item-info img {
   width: 100%;
+  height: 100px;
+}
+.Cart .your-cart .item .item-inc-dec {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
-.Catalog .item .item-info span {
-  color: green;
+.Cart .your-cart .item .item-inc-dec div {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
 }
-.Catalog .item button {
+.Cart .your-cart .item .item-inc-dec button {
   font-size: 18px;
   color: white;
   background-color: black;
   padding: 5px 5px;
   width: 80%;
-  margin-bottom: 10px;
   border: none;
-  cursor: pointer; /* Ensures it's clickable */
+  cursor: pointer;
   box-sizing: border-box;
+  font-family: var(--mainFont);
 }
-.Catalog .item button:hover {
-  background-color: #303030; /* Change background color on hover */
+.Cart .order-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 1px 9px black;
+  width: 30%;
+  height: 600px;
+  padding: 10px;
 }
-
-.Catalog .item button:active {
-  background-color: gray; /* Change background color when clicked */
+.Cart .order-summary div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.Catalog .item img {
-  width: 90%;
+.Cart .order-summary .Butoons {
+  flex-direction: column;
+  gap: 10px;
 }
-@media screen and (max-width: 700px) {
-  .Catalog .item {
-    width: 40%;
-  }
+.Cart .order-summary div button {
+  font-size: 14px;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  padding: 5px 5px;
+  width: 80%;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
 }
-@media screen and (max-width: 430px) {
-  .Catalog .item h3 {
-    font-size: 16px;
-  }
-  .Catalog .item button {
-    font-size: 14px;
-  }
+.Cart .order-summary div .upade-quantities {
+  background-color: white;
+  color: black;
 }
-@media screen and (max-width: 400px) {
-  .Catalog .item {
-    width: 100%;
-  }
+.Cart .order-summary .make-black-line {
+  position: relative;
+}
+.Cart .order-summary .make-black-line::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #00000069;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+}
+.Cart .order-summary h4 {
+  font-size: 20px;
+}
+.Cart .order-summary div span {
+  font-size: 14px;
+}
+.Cart .order-summary div .total {
+  font-size: 16px;
 }
 .footer {
   background-color: #393e46;
