@@ -1,0 +1,138 @@
+@import url(base.css);
+body {
+  font-family: var(--mainFont);
+}
+header {
+  padding: 20px 0;
+  box-shadow: -2px 0px 10px #00000096;
+}
+header .Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header .Icons h1 {
+  font-size: 24px;
+}
+header .bar {
+  display: none;
+}
+header .Nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header .Nav a {
+  color: #8c8c8c;
+  font-size: 20px;
+  font-family: var(--mainFont);
+}
+header .Nav .selected {
+  color: #030303;
+}
+@media screen and (max-width: 768px) {
+  header .Icons h1 {
+    font-size: 16px;
+  }
+  header .bar {
+    display: block;
+  }
+  header .Nav {
+    display: none;
+  }
+}
+.hestory {
+  padding: 60px 0;
+}
+.hestory .row {
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hestory .carts-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hestory .carts-list .cart {
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 1px 5px black;
+  font-family: var(--subFont);
+}
+.footer {
+  background-color: #393e46;
+  padding: 50px 0;
+  color: white;
+}
+.footer a {
+  color: white;
+}
+.footer .left-side {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer .left-side .logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer .left-side img {
+  width: 35px;
+}
+.footer .left-side .logo a {
+  font-family: "Roboto";
+  font-size: 24px;
+}
+
+.footer .right-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+.footer .right-side .footer-end-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .right-side .footer-end-item nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer .row {
+    gap: 20px;
+  }
+  .footer .left-side {
+    width: 100%;
+  }
+  .footer .right-side {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .right-side .footer-end-item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer .right-side .footer-end-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
