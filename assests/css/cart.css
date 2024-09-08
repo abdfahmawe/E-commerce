@@ -66,6 +66,7 @@ header .Nav .selected {
   display: flex;
   justify-content: space-between;
   box-shadow: 0px 1px 12px #000000b0;
+  flex-wrap: wrap;
 }
 .Cart .your-cart .item .item-info {
   display: flex;
@@ -121,6 +122,7 @@ header .Nav .selected {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .Cart .order-summary .Butoons {
   flex-direction: column;
@@ -160,6 +162,47 @@ header .Nav .selected {
 }
 .Cart .order-summary div .total {
   font-size: 16px;
+}
+@media screen and (max-width: 1114px) {
+  .Cart .your-cart .item {
+    gap: 20px;
+  }
+  .Cart .your-cart .item .item-info {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 580px) {
+  .Cart .order-summary div span {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Cart .your-cart .item {
+    gap: 20px;
+  }
+  .Cart .your-cart .item .item-inc-dec {
+    flex-wrap: wrap;
+  }
+  .Cart .order-summary h4 {
+    font-size: 16px;
+  }
+  .Cart .order-summary div button {
+    font-size: 10px;
+  }
+  .Cart .your-cart {
+    width: 100%;
+  }
+  .Cart .order-summary {
+    width: 100%;
+  }
+  .Cart .row {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .Cart .your-cart .item .item-inc-dec button {
+    font-size: 12px;
+  }
 }
 .footer {
   background-color: #393e46;
