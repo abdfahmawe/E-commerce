@@ -98,7 +98,7 @@ header .Nav .selected {
   gap: 10px;
   padding: 5px;
 }
-.Cart .your-cart .item .item-inc-dec button {
+.Cart .your-cart .item .item-inc-dec .Remove {
   font-size: 18px;
   color: white;
   background-color: black;
@@ -108,6 +108,15 @@ header .Nav .selected {
   cursor: pointer;
   box-sizing: border-box;
   font-family: var(--mainFont);
+}
+.Cart .your-cart .item .item-inc-dec .inc,
+.Cart .your-cart .item .item-inc-dec .dec {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
+  padding: 3px;
 }
 .Cart .order-summary {
   display: flex;
@@ -124,24 +133,14 @@ header .Nav .selected {
   align-items: center;
   flex-wrap: wrap;
 }
-.Cart .order-summary .Butoons {
-  flex-direction: column;
-  gap: 10px;
+.Cart .order-summary h4 {
+  font-size: 20px;
 }
-.Cart .order-summary div button {
+.Cart .order-summary div span {
   font-size: 14px;
-  border: 1px solid black;
-  color: white;
-  background-color: black;
-  padding: 5px 5px;
-  width: 80%;
-  cursor: pointer;
-  box-sizing: border-box;
-  font-family: var(--mainFont);
 }
-.Cart .order-summary div .upade-quantities {
-  background-color: white;
-  color: black;
+.Cart .order-summary div .total {
+  font-size: 16px;
 }
 .Cart .order-summary .make-black-line {
   position: relative;
@@ -154,21 +153,52 @@ header .Nav .selected {
   left: 0;
   width: 100%;
 }
-.Cart .order-summary h4 {
-  font-size: 20px;
+.Cart .order-summary .Butoons {
+  flex-direction: column;
+  gap: 10px;
 }
-.Cart .order-summary div span {
+
+.Cart .order-summary div .Proceed-to-Ckeckout {
   font-size: 14px;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  padding: 5px 5px;
+  width: 80%;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: var(--mainFont);
 }
-.Cart .order-summary div .total {
-  font-size: 16px;
+
+.Cart .order-summary .Butoons .Cash {
+  flex-direction: row;
+  box-sizing: border-box;
+
+  width: 100%;
 }
+.Cart .order-summary .Butoons .Cash h5 {
+  width: 30%;
+}
+.Cart .order-summary .Butoons .Cash .input {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
 @media screen and (max-width: 1114px) {
   .Cart .your-cart .item {
     gap: 20px;
   }
   .Cart .your-cart .item .item-info {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Cart .order-summary .Butoons .Cash h5 {
+    width: 100%;
+  }
+  .Cart .order-summary .Butoons .Cash .input {
+    width: 100%;
   }
 }
 @media screen and (max-width: 580px) {
