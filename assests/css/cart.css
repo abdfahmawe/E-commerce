@@ -124,7 +124,7 @@ header .Nav .selected {
   gap: 10px;
   box-shadow: 0px 1px 9px black;
   width: 30%;
-  height: 600px;
+  min-height: 600px;
   padding: 10px;
 }
 .Cart .order-summary div {
@@ -136,6 +136,21 @@ header .Nav .selected {
 .Cart .order-summary h4 {
   font-size: 20px;
 }
+.Cart .order-summary .item-list-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: space-between;
+  /* box-shadow: 0px 1px 9px black; */
+}
+.Cart .order-summary .item-list-info div {
+  display: flex;
+}
+.Cart .order-summary .checkout {
+  position: relative;
+}
+
 .Cart .order-summary div span {
   font-size: 14px;
 }
@@ -149,13 +164,42 @@ header .Nav .selected {
   content: "";
   position: absolute;
   border: 1px solid #00000069;
-  bottom: -5px;
+  bottom: -9px;
   left: 0;
   width: 100%;
 }
-.Cart .order-summary .Butoons {
+
+.Cart .order-summary .Payment {
   flex-direction: column;
   gap: 10px;
+}
+/* .Cart .order-summary .Payment .type-of-payment {
+  width: 100%;
+} */
+.Cart .order-summary .Payment .type-of-payment form {
+  display: flex;
+  gap: 10px;
+}
+.Cart .order-summary .Payment .type-of-payment form .options {
+  display: flex;
+  gap: 10px;
+}
+.Cart .order-summary .Payment .type-of-payment form .options .option {
+  display: flex;
+  gap: 2px;
+}
+.Cart .order-summary .Payment .visa-payment-form {
+  width: 100%;
+}
+.Cart .order-summary .Payment .visa-payment-form .visa-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.Cart .order-summary .Payment .visa-payment-form div {
+  width: 100%;
 }
 
 .Cart .order-summary div .Proceed-to-Ckeckout {

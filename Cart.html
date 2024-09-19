@@ -84,22 +84,94 @@
             </section>
             <section class="order-summary">
               <h4>Order Summary</h4>
-              <div>
-                <span>subtotal</span>
+              <div class="item-list-info make-black-line">
+                <div class="iten-list-1">
+                  <span>name : item</span>
+                  <span>price : $100</span>
+                  <span>quantity : 3</span>
+                  <span>totalPrice : $300</span>
+                </div>
+                <div class="item-list-2">
+                  <span>name : item</span>
+                  <span>price : $100</span>
+                  <span>quantity : 3</span>
+                  <span>totalPrice : $300</span>
+                </div>
+                <div class="iten-list-1">
+                  <span>name : item</span>
+                  <span>price : $100</span>
+                  <span>quantity : 3</span>
+                  <span>totalPrice : $300</span>
+                </div>
+                <div class="item-list-2">
+                  <span>name : item</span>
+                  <span>price : $100</span>
+                  <span>quantity : 3</span>
+                  <span>totalPrice : $300</span>
+                </div>
+              </div>
+
+              <div class="checkout">
+                <span>Total Price</span>
                 <span>$1797.00</span>
               </div>
               <div class="make-black-line">
-                <span>discount</span>
+                <span>Discount</span>
                 <span>5%</span>
               </div>
               <div>
-                <span class="PriceAfterDiscount">Price After Discount</span>
+                <span class="PriceAfterDiscount">Net Total</span>
                 <span>$1958.75</span>
               </div>
-              <div class="Butoons">
-                <div class="Cash">
-                  <h5>Enter Cash $:</h5>
-                  <input class="input" type="text" />
+              <div class="Payment">
+                <div class="type-of-payment">
+                  <form>
+                    <h5>How Would You Like to Pay?</h5>
+
+                    <div class="options">
+                      <div class="option">
+                        <input
+                          type="radio"
+                          id="cash"
+                          name="payment"
+                          value="cash"
+                        />
+                        <label for="cash">Cash</label>
+                      </div>
+                      <div class="option">
+                        <input
+                          type="radio"
+                          id="visa"
+                          name="payment"
+                          value="visa"
+                        />
+                        <label for="visa">Visa</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="visa-payment-form">
+                  <div class="intro">
+                    <h5>Credit card</h5>
+                    <img
+                      src="assests/images/Cart/system-solid-38-credit-card-hover-card.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="visa-data">
+                    <div class="visa-number">
+                      <label for="">Card number</label>
+                      <input type="text" placeholder="0000 1234 1234 0000" />
+                    </div>
+                    <div class="visa-expiration-date">
+                      <label for="">Expiration date</label>
+                      <input type="month" placeholder="MM/YY" />
+                    </div>
+                    <div class="visa-CVV">
+                      <label for="">CVV</label>
+                      <input type="number" placeholder="123" />
+                    </div>
+                  </div>
                 </div>
                 <button class="Proceed-to-Ckeckout">Proceed to Ckeckout</button>
               </div>
