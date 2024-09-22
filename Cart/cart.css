@@ -1,4 +1,4 @@
-@import url(base.css);
+@import url(../assests/css/base.css);
 body {
   font-family: var(--mainFont);
 }
@@ -125,7 +125,7 @@ header .Nav .selected {
   box-shadow: 0px 1px 9px black;
   width: 30%;
   min-height: 600px;
-  padding: 10px;
+  padding: 20px;
 }
 .Cart .order-summary div {
   display: flex;
@@ -146,6 +146,8 @@ header .Nav .selected {
 }
 .Cart .order-summary .item-list-info div {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .Cart .order-summary .checkout {
   position: relative;
@@ -153,6 +155,7 @@ header .Nav .selected {
 
 .Cart .order-summary div span {
   font-size: 14px;
+  width: 25%;
 }
 .Cart .order-summary div .total {
   font-size: 16px;
@@ -189,6 +192,7 @@ header .Nav .selected {
   gap: 2px;
 }
 .Cart .order-summary .Payment .visa-payment-form {
+  display: none;
   width: 100%;
 }
 .Cart .order-summary .Payment .visa-payment-form .visa-data {
@@ -237,6 +241,17 @@ header .Nav .selected {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 980px) {
+  .Cart .your-cart {
+    width: 100%;
+  }
+  .Cart .order-summary {
+    width: 100%;
+  }
+  .Cart .row {
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 800px) {
   .Cart .order-summary .Butoons .Cash h5 {
     width: 100%;
@@ -246,9 +261,9 @@ header .Nav .selected {
   }
 }
 @media screen and (max-width: 580px) {
-  .Cart .order-summary div span {
+  /* .Cart .order-summary div span {
     width: 100%;
-  }
+  } */
 }
 @media screen and (max-width: 480px) {
   .Cart .your-cart .item {
@@ -263,19 +278,28 @@ header .Nav .selected {
   .Cart .order-summary div button {
     font-size: 10px;
   }
-  .Cart .your-cart {
+  /* .Cart .your-cart {
     width: 100%;
   }
   .Cart .order-summary {
     width: 100%;
-  }
-  .Cart .row {
+  } */
+  /* .Cart .row {
     gap: 20px;
-  }
+  } */
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .Cart .your-cart .item .item-inc-dec button {
     font-size: 12px;
+  }
+  .Cart .order-summary div span {
+    width: fit-content;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Cart .order-summary .Payment .type-of-payment h5 {
+    font-size: 10px;
   }
 }
 .footer {
